@@ -20,17 +20,21 @@ $ export OPENWEATHERMAP_API_KEY=<Your Key>
 2) You can run the server standalone with:
 
 ```
-/weather/app$ python3 main.py
+# Run the server (http://127.0.0.1:5000/weather)
+/weather/app $ python3 main.py &
+
+# Run the UI (http://localhost:3000/)
+/weather/ui $ yarn start
 
 ```
 
 or you can build and run through Docker:
 
 ```
+# Lint & test Python code, build the React front end, and build a Docker image...
 /weather/scripts$ ./build.sh
 
-# And if build successful
-
+# And if build successful, use the run script to start the Docker container, and launch the browsers...
 /weather/scripts$ ./run.sh
 
 ```
