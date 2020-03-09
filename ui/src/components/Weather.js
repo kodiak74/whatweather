@@ -1,6 +1,7 @@
 import React from 'react';
 import { WiDirectionUp, WiDirectionUpRight, WiDirectionRight, WiDirectionDownRight, WiDirectionDown, WiDirectionDownLeft, WiDirectionLeft, WiDirectionUpLeft } from "weather-icons-react";
 import { WiWindBeaufort0, WiWindBeaufort1, WiWindBeaufort2, WiWindBeaufort3, WiWindBeaufort4, WiWindBeaufort5, WiWindBeaufort6, WiWindBeaufort7, WiWindBeaufort8, WiWindBeaufort9, WiWindBeaufort10 } from "weather-icons-react";
+import { WiThermometer, WiBarometer, WiCloud, WiStrongWind, WiHumidity} from "weather-icons-react";
 import LocationSetter from './LocationSetter'
 
 class Weather extends React.Component {
@@ -76,7 +77,7 @@ class Weather extends React.Component {
 
     if ((weather == undefined) || (weather.status == "Offline")) {
       return (
-        <div className="col-sm-2">
+        <div className="col-sm-4 offset-md-4">
           <div className="card">
             <h3 className="card-title">Service offline.</h3>
 
@@ -101,14 +102,14 @@ class Weather extends React.Component {
             <div className="card-body">
               <div className="row p-2">
               <div className="border p-0 col-md-4 offset-md-4">
-                  <p className="pt-3 pb-3 mb-0 bg-danger text-white">Temperature</p>
+                  <p className="pt-3 pb-3 mb-0 bg-danger text-white"><WiThermometer size={32} /> Temperature</p>
                   <div className="card-text p-3"> <h2>{weather.temperature} °C</h2> </div>
                 </div>
               </div>
 
               <div className="row p-2">
               <div className="border m-2 p-0 col-md-4 ">
-                <p className="pt-3 pb-3 mb-2 bg-light ">Wind</p>
+                <p className="pt-3 pb-3 mb-2 bg-light "><WiStrongWind size={32}/> Wind</p>
                 <div className="row p-3">
                   <div className="col-sm-6">
                     <p className="card-text">{this.getWindDirectionIcon(weather.wind.deg)} </p>
@@ -122,15 +123,15 @@ class Weather extends React.Component {
                 </div>
               </div>
               <div className="border m-2 p-0 col-md-2">
-                <p className="pt-3 pb-3 mb-2 bg-info text-white">Humidity</p>
+                <p className="pt-3 pb-3 mb-2 bg-info text-white"><WiHumidity size={32}/> Humidity</p>
                 <div className="card-text p-3"><h4>{weather.humidity}% </h4> </div>
               </div>
               <div className="border m-2 p-0 col-md-2">
-                <p className="pt-3 pb-3 mb-2 bg-secondary text-white">Cloud</p>
+                <p className="pt-3 pb-3 mb-2 bg-secondary text-white"><WiCloud size={32}/> Cloud</p>
                 <div className="card-text p-3"><h4>{weather.cloud}% </h4> </div>
               </div>
               <div className="border m-2 p-0 col-md-2">  
-                <p className="pt-3 pb-3 mb-2 bg-warning ">Pressure</p>
+                <p className="pt-3 pb-3 mb-2 bg-warning "><WiBarometer size={32}/> Pressure</p>
                 <div className="card-text p-3"><h4>{weather.pressure} hPa </h4> </div>
               </div>
              

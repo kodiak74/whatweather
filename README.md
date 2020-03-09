@@ -1,8 +1,8 @@
-# Weather
+# WhatWeather
 
 ## Overview
 
-Weather is a sample project that consists of a Python Flask webservice to provide a redundant source of weather information, using OpenWeatherStack and WeatherStack as the backend datasources. To run the application you will need to signup for API keys for both services.
+WhatWeather is a sample project that consists of a Python Flask webservice to provide a redundant source of weather information, using OpenWeatherStack and WeatherStack as the backend datasources. To run the application you will need to signup for API keys for both services.
 This also includes a ReactJS frontend for the service, as well as scripting to build and deploy as a Docker container, as an example of a CI/CD integration piece.
 
 
@@ -51,11 +51,10 @@ To "stress test" the application, and see the failover in action, try:
 # Resources
 
 Fonts & Icons:
-* https://websygen.github.io/owfont/
+* https://getbootstrap.com/
 * https://najens.github.io/weather-icons-react/
  
-Other tutorials:
-* https://medium.com/@leizl.samano/how-to-make-a-weather-app-using-react-403c88252deb
+
  
 
 
