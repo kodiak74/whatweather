@@ -5,6 +5,13 @@
 WhatWeather is a sample project that consists of a Python Flask webservice to provide a redundant source of weather information, using OpenWeatherStack and WeatherStack as the backend datasources. To run the application you will need to signup for API keys for both services.
 This also includes a ReactJS frontend for the service, as well as scripting to build and deploy as a Docker container, as an example of a CI/CD integration piece.
 
+Please refer to the Medium articles for further detail on building and running the system:
+
+* [Part 1](https://medium.com/@chris_76982/getting-the-weather-a-full-stack-reactjs-python-flask-api-tutorial-part-1-d56c42fe1e4f)
+* [Part 2](https://medium.com/@chris_76982/getting-the-weather-a-full-stack-reactjs-python-flask-api-tutorial-part-2-f8338e9f76c)
+* [Part 3](https://medium.com/@chris_76982/getting-the-weather-a-full-stack-reactjs-python-flask-api-tutorial-part-3-d439ffcadf18)
+
+ 
 
 ## Running the code
 
